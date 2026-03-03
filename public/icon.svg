@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Background -->
+  <rect width="512" height="512" fill="#1a1209"/>
+
+  <!-- Ink drop / nib body -->
+  <path d="M256 80 L340 200 Q360 240 340 290 Q310 360 256 400 Q202 360 172 290 Q152 240 172 200 Z"
+        fill="#f5f0e8" opacity="0.95"/>
+
+  <!-- Nib split line -->
+  <line x1="256" y1="160" x2="256" y2="400"
+        stroke="#1a1209" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- Nib vent hole -->
+  <ellipse cx="256" cy="210" rx="10" ry="14" fill="#1a1209" opacity="0.6"/>
+
+  <!-- Ink shimmer highlight -->
+  <path d="M220 200 Q210 250 218 300" stroke="#c9a96e" stroke-width="4" fill="none"
+        stroke-linecap="round" opacity="0.7"/>
+
+  <!-- Ink drop at tip -->
+  <ellipse cx="256" cy="408" rx="14" ry="18" fill="#c9a96e" opacity="0.9"/>
+</svg>

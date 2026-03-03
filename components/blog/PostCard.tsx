@@ -34,10 +34,10 @@ interface PostCardProps {
 
 export function PostCard({ post, featured = false }: PostCardProps) {
   return (
-    <article className={`group h-full flex ${featured ? 'flex-row' : 'flex-col'} bg-white border border-ink-100 hover:border-ink-300 hover:shadow-md transition-all duration-300`}>
+    <article className={`group flex ${featured ? 'flex-row h-64 md:h-80' : 'flex-col h-full'} bg-white border border-ink-100 hover:border-ink-300 hover:shadow-md transition-all duration-300`}>
       {/* Cover Image */}
       {post.coverImage && (
-        <Link href={`/blog/${post.slug}`} className={`block overflow-hidden bg-ink-100 ${featured ? 'w-1/2 aspect-auto' : 'aspect-video sm:aspect-[16/10]'}`}>
+        <Link href={`/blog/${post.slug}`} className={`block overflow-hidden bg-ink-100 flex-shrink-0 ${featured ? 'w-1/2 h-64 md:h-80' : 'aspect-video sm:aspect-[16/10]'}`}>
           <img
             src={post.coverImage}
             alt={post.title}
