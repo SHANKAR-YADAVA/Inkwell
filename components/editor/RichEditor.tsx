@@ -57,7 +57,7 @@ export function RichEditor({ content, onChange, placeholder = 'Begin your storyâ
 
   useEffect(() => {
     if (editor && content !== editor.getHTML()) {
-      editor.commands.setContent(content, false);
+      editor.commands.setContent(content);
     }
   }, []);
 
